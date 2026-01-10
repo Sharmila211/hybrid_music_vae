@@ -29,17 +29,86 @@ The project is divided into **Easy**, **Medium**, and **Hard** tasks as specifie
 
 ---
 
-### Hard Task – β-VAE with Ground-Truth Evaluation
-- β-VAE trained on GTZAN audio dataset  
+### Hard Task – Beta-VAE with Ground-Truth Evaluation
+- Beta-VAE trained on GTZAN audio dataset  
 - Ground-truth genre labels extracted from folder structure  
 - Latent space clustering using K-Means  
 - Quantitative evaluation using:
   - Adjusted Rand Index (ARI)
   - Normalized Mutual Information (NMI)
   - Purity score  
-- t-SNE visualization of β-VAE latent space  
+- t-SNE visualization of Beta-VAE latent space  
 
 ---
+## Dataset Description
+
+Datasets are NOT included in this repository due to size and licensing restrictions.
+
+This repository only contains code, scripts, and instructions to reproduce the results.
+
+
+## Audio Datasets Used
+GTZAN Music Genre Dataset for Hard Task.
+
+Description: 1000 audio tracks categorized into 10 music genres
+
+Used for: Audio VAE and β-VAE training, ground-truth clustering evaluation
+
+Link:
+https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification
+
+
+Genres: blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock
+
+Bangla Audio Dataset (Medium Task)
+
+Description: Bangla music audio features stored in CSV format
+
+Used for: Audio VAE training and multimodal fusion
+
+Content: Pre-extracted spectral and MFCC-based audio features
+
+Note: Audio files were processed offline and features saved as dataset.csv
+
+Location: data/raw/bangla_audio/dataset.csv
+
+Lyrics Datasets Used for Easy & Medium Tasks.
+
+# Bangla Lyrics Dataset
+
+Format: CSV
+
+Language: Bangla
+
+Used for: Text VAE and hybrid fusion
+
+Location:  data/raw/bangla_lyrics.csv
+
+# English Lyrics Dataset
+
+Format: CSV
+
+Language: English
+
+Used for: Text VAE and hybrid fusion
+
+Location: data/raw/english_lyrics.csv
+
+
+Lyrics datasets were collected from publicly available sources and Kaggle lyric datasets.
+
+
+## Project Structure
+
+hybrid_music_vae/
+├── src/                # All source code
+├── data/               # Dataset directory (not included)
+│   └── raw/
+├── results/            # Generated outputs (ignored in Git)
+├── README.md
+├── requirements.txt
+└── .gitignore
+
 
 ## Key Results
 
@@ -47,7 +116,7 @@ The project is divided into **Easy**, **Medium**, and **Hard** tasks as specifie
 |----|----|----|
 | Easy | Text VAE | Silhouette, Calinski–Harabasz |
 | Medium | Audio + Text Fusion | Silhouette ≈ 0.26 |
-| Hard | β-VAE Audio | ARI ≈ 0.09, NMI ≈ 0.17, Purity ≈ 0.29 |
+| Hard | Beta-VAE Audio | ARI ≈ 0.09, NMI ≈ 0.17, Purity ≈ 0.29 |
 
 ---
 
