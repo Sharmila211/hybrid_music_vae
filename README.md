@@ -1,6 +1,6 @@
 # Hybrid Music Representation Learning using Variational Autoencoders (VAE)
 
-This project implements a hybrid music representation learning framework using Variational Autoencoders (VAEs).  
+This project implements a hybrid music representation learning framework using Variational Autoencoders (VAE).  
 The system learns latent representations from **lyrics (text)**, **audio features**, and their **fusion**, and evaluates clustering performance for music analysis tasks.
 
 The project is divided into **Easy**, **Medium**, and **Hard** tasks as specified in the course project guidelines.
