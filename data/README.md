@@ -70,12 +70,7 @@ Genres:
 - rock
 
 ### Official Source
-GTZAN can be obtained from:
-
-- Original GTZAN description:
-  http://marsyas.info/downloads/datasets.html  
-- Mirror :
-  https://github.com/marsyas/marsyas-datasets
+GTZAN can be obtained from kaggle/github/pytorch
 
 ### Expected Folder Structure
 After extracting the dataset:
