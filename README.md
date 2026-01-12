@@ -3,7 +3,7 @@
 This project implements a hybrid music representation learning framework using Variational Autoencoders (VAE).  
 The system learns latent representations from **lyrics (text)**, **audio features**, and their **fusion**, and evaluates clustering performance for music analysis tasks.
 
-The project is divided into **Easy**, **Medium**, and **Hard** tasks as specified in the course project guidelines.
+The project is divided into **Easy**, **Medium**, and **Hard** tasks as specified in the project guidelines. The codes are in `src` folder, the datasets will be on data folder and the results (.png, .npy, .pt) will be on results folder.
 
 ---
 
