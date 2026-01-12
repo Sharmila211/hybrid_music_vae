@@ -1,1 +1,37 @@
+# Results
 
+This folder will contains output artifacts from training the VAEs and running clustering/evaluation for:
+- Audio-only VAE
+- Text/Lyrics-only VAE
+- Fused (audio + text) representation
+
+## Folder contents:
+
+- audio_latents.npy
+- audio_vae.pt
+- beta_latents.npy
+- beta_vae.pt
+- fused_latents.npy
+- gtzan_genre_labels.npy
+- pca_clusters.npy
+- text_latents.npy
+- text_vae.pt
+- tsne_beta.png
+- tsne_fused.png
+- tsne_vae.png
+- vae_clusters.npy
+
+### Plots (2D latent visualizations)
+
+- `tsne_vae.png` — t-SNE visualization of the VAE latent space (baseline)
+- `tsne_beta.png` — t-SNE visualization of the Beta-VAE latent space
+- `tsne_fused.png` — t-SNE visualization of the fused latent representation
+
+
+## How these results were generated
+
+Example pipeline:
+1. Preprocess dataset (audio features + lyrics)
+2. Train models to obtain latents
+3. Run clustering on latent vectors
+4. Evaluate clustering quality and create plots
