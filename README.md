@@ -52,7 +52,7 @@ GTZAN Music Genre Dataset for Hard Task.
 
 Description: 1000 audio tracks categorized into 10 music genres
 
-Used for: Audio VAE and β-VAE training, ground-truth clustering evaluation
+Used for: Audio VAE and Beta-VAE training, ground-truth clustering evaluation
 
 Link:
 https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification
@@ -101,10 +101,10 @@ Lyrics datasets were collected from publicly available sources and Kaggle lyric 
 ## Project Structure
 
 hybrid_music_vae/
-├── src/                # All source code
-├── data/               # Dataset directory (not included)
+├── src/               ( # All source code )
+├── data/               ( # Dataset directory (not included here) )
 │   └── raw/
-├── results/            # Generated outputs (ignored in Git)
+├── results/            ( # Generated outputs (ignored in Git) )
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -116,7 +116,7 @@ hybrid_music_vae/
 |----|----|----|
 | Easy | Text VAE | Silhouette, Calinski–Harabasz |
 | Medium | Audio + Text Fusion | Silhouette ≈ 0.26 |
-| Hard | Beta-VAE Audio | ARI ≈ 0.09, NMI ≈ 0.17, Purity ≈ 0.29 |
+| Hard | Beta-VAE Audio | ARI = 0.09, NMI = 0.17, Purity = 0.29 |
 
 ---
 
